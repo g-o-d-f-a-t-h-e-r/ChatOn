@@ -12,7 +12,7 @@ const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/u
 const app = express()
 const server = http.createServer(app)
 const io = socket(server)
-port = process.env.port || 8080
+port = process.env.port
 
 
 //EXPRESS STUFF
