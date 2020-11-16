@@ -1,0 +1,22 @@
+{
+  "name": "chaton",
+  "version": "1.0.0",
+  "description": "An interactive Chat App for users",
+  "main": "server.js",
+  "dependencies": {
+    "emojionearea": "^3.4.2",
+    "express": "^4.17.1",
+    "moment": "^2.29.0",
+    "pug": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "g-o-d-f-a-t-h-e-r",
+  "license": "ISC"
+}

@@ -1,0 +1,66 @@
+extends base.pug
+
+block title
+    title Get Started Chatting !
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous")
+    script(src="/socket.io/socket.io.js")
+    script(src="../static/client.js")
+
+
+block link
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Crimson+Text&family=Merriweather&family=Merriweather+Sans:wght@300&display=swap")
+    link(rel="icon" type="image/png" href="../static/img/logo.png")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet")
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    //- link(rel="stylesheet", href="../static/emojionearea.min.css")
+
+//- block headscripts
+//-     script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
+//-     script(src="../static/emojionearea.min.js")
+
+
+block style
+    style
+        include ../static/chat.css
+
+block content 
+    nav
+        a(href="/")
+            img#logo(src="../static/img/logo.png", alt="ChatOn")
+        a(style="text-decoration:none" href="/")
+            h2#logoname ChatOn
+        div
+            a(href="/login")
+                button#btn Leave Chat
+
+        div.hamburger
+            p.lines
+            p.lines
+            p.lines    
+      
+
+    div.container
+        div.menu
+            div#room
+                strong Room Name 
+                div#room-name XYZ
+            
+            div#users
+                strong Users Online
+                ul#userList
+                    
+
+        div.chatContainer 
+                    
+        div.push
+
+        div.chat-form-container
+                form(id="chat-form")
+                    input(id="msg" type="text" placeholder="Enter Your Message" required autocomplete="off")
+                    button(class="btn") Send   
+        
+        //- script(src="../static/emoji.js")
+
+        

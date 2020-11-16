@@ -1,0 +1,382 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background: rgb(236, 236, 236);
+    
+}
+
+nav{
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.68vw 2.92vw;
+    background-color: rgb(120, 0, 145);
+    user-select: none;
+}
+
+#logo{
+
+    width: 5.19vw;
+    height: 9.49vh;
+    filter: contrast(100);
+
+}
+
+#logoname{
+
+    font-family: 'Merriweather', serif;
+    letter-spacing:0.21vw;
+    font-size: 2.92vw;
+    /* margin-top: 10px; */
+    margin-left: 1.09vw;
+    color: white;
+
+}
+
+nav div{
+    margin-left: auto;
+}
+
+#btn{
+
+    font-family: 'Baloo Tammudu 2', cursive;
+    border: none;
+    border-radius: 0.21vw;
+    outline: none;
+    background-color: white;
+    font-size: 1.46vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0;
+    padding: 1.75vw 1.46vw 0.95vw;
+    cursor: pointer;
+    margin-right: 3.66vw;
+    transition-duration: 0.2s;
+
+}
+
+#btn:hover{
+
+    background-color: thistle;
+
+}
+
+.container h1{
+
+    margin: 0.73vw auto;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.92vw;
+    letter-spacing: 0.21vw;
+
+
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: -1.02vw 3.66vw;
+    column-gap: 5%;
+    overflow: hidden;
+    /* width: 100vw; */
+    /* max-height: 100vh; */
+    
+}
+
+
+.container div{
+
+    font-family: 'Crimson Text', serif;
+    font-size: 1.83vw;
+    align-self: center;
+    margin-right: 2.48vw;
+    /* text-align: left; */
+
+}
+
+.container p{
+
+    color: rgb(53, 53, 53);
+
+}
+
+/* .container img{
+
+    width: 35%;
+    height: 35%;
+    align-self: flex-end;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.685);
+    border: 3px solid  rgb(120, 0, 145);
+    border-radius: 10px;
+
+
+} */
+
+.container img{
+
+    width: 38.43vw;
+    height: 89.2vh;
+
+}
+
+.chatbutton{
+    text-align: center;
+    margin-top: 6.58vw;
+}
+
+#chatbutton{
+
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 1.46vw;
+    font-weight: bold;
+    letter-spacing: 0.14vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 7.32vw;
+    outline: none;
+    line-height: 0;
+    padding: 2.19vw 1.46vw 1.39vw;
+    background-color: rgb(120, 0, 145);
+    color: white;
+    transition-duration: 0.2s;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 0.18vw rgba(121, 0, 145, 0.596);
+
+}
+
+#chatbutton:hover{
+
+    background-color: rgb(71, 0, 85);
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1024px){
+    
+    nav{
+        padding: 1.5vh 30%;
+    }
+
+    #logo{
+        
+        width: 12.5vw;
+        height: 10vh;
+        filter: contrast(100);
+        
+    }
+
+    #logoname{
+        margin-left: 20px;
+        font-size: 8vw;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        max-height: 100vh;
+    }
+
+    .container img{
+        width: 50vw;
+        height: 40vh;
+        display: block;
+        margin: 5vh auto;
+    }
+
+    .container div h1{
+        margin-bottom: 2vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .container div p{
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    #chatbutton{
+        font-size: 4vw;
+        padding: 4vh 2vh 2.2vh 2vh;
+        text-decoration: none;
+        margin-left: 10%;
+    }
+
+}
+
+@media all and (max-width: 414px){
+    
+    nav{
+        padding-left: 18%;
+    }
+
+    #logo{
+        
+        width: 3rem;
+        height: 3rem;
+        filter: contrast(100);
+        
+    }
+
+    #logoname{
+        margin-left: 10px;
+        font-size: 11vw;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        max-height: 100vh;
+    }
+
+    .container img{
+        width: 65vw;
+        height: 40vh;
+        display: block;
+        margin: 3vh auto;
+    }
+
+    .container div h1{
+        margin-bottom: 1vh;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .container div p{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    #chatbutton{
+        font-size: 5vw;
+        padding: 4vh 2vh 2.2vh 2vh;
+        text-decoration: none;
+    }
+
+}
+
+@media all and (max-width: 375px) and (min-height: 812px){
+    
+    nav{
+        padding-left: 18%;
+    }
+
+    #logo{
+        
+        width: 4rem;
+        height: 4rem;
+        filter: contrast(100);
+        
+    }
+
+    #logoname{
+        margin-left: 10px;
+        font-size: 11vw;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        max-height: 100vh;
+    }
+
+    .container img{
+        width: 80vw;
+        height: 40vh;
+        display: block;
+        margin: 3vh auto;
+    }
+
+    .container div h1{
+        margin-bottom: 2vh;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .container div p{
+        font-size: 5.2vw;
+        text-align: center;
+    }
+
+    #chatbutton{
+        font-size: 6vw;
+        padding: 4vh 2vh 2vh 2vh;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    nav{
+        padding-left: 18%;
+    }
+
+    #logo{
+        
+        width: 3rem;
+        height: 3rem;
+        filter: contrast(100);
+        
+    }
+
+    #logoname{
+        margin-left: 10px;
+        font-size: 10vw;
+    }
+
+
+    .container{
+        display: block;
+        max-height: 100vh;
+    }
+
+    .container img{
+        width: 65vw;
+        height: 40vh;
+        display: block;
+        margin: 3vh auto;
+    }
+
+    .container div h1{
+        margin-bottom: 2vh;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .container div p{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    #chatbutton{
+        font-size: 5vw;
+        padding: 4vh 2vh 2.2vh 2vh;
+        text-decoration: none;
+    }
+}

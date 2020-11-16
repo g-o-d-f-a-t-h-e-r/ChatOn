@@ -1,0 +1,35 @@
+extends base.pug
+
+block title
+    title ChatOn
+
+block scripts
+
+block link
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Crimson+Text&family=Merriweather&family=Merriweather+Sans:wght@300&display=swap")
+    link(rel="icon" type="image/png" href="../static/img/logo.png")
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+block style
+    style
+        include ../static/style.css
+
+block content
+    nav
+        a(href="/")
+            img#logo(src="../static/img/logo.png", alt="ChatOn")
+        a(style="text-decoration:none" href="/")
+            h2#logoname ChatOn
+        div
+            a(href="/login")
+                button#btn Get Started
+    
+    div.container
+        img(src="../static/img/best.png", alt="Chat")
+
+        div
+            h1 What is ChatOn ?
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque doloribus accusamus amet vero maiores totam ad facilis rem. Animi deleniti aspernatur excepturi culpa placeat. Debitis voluptatem sequi, quos optio quod animi nisi fugit maiores!
+            div.chatbutton
+                a(href="/login")
+                    button#chatbutton Start Chatting

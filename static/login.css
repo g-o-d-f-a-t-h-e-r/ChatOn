@@ -1,0 +1,555 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background: rgb(236, 236, 236);
+    
+}
+
+.container{
+
+    display: flex;
+    /* column-gap: -3%; */
+    /* justify-content: space-evenly; */
+
+}
+
+.left{
+    margin: 8.41vw 0 0 5.85vw;
+}
+
+#logo{
+
+    display: flex;
+    user-select: none;
+    align-items: center;
+    margin: 3.66vw 3.66vw 1.46vw;
+    cursor: pointer;
+
+}
+
+#logo img{
+
+    width: 10.39vw;
+    height: 9.66vw;
+    filter: contrast(100);
+
+}
+
+#logo h1{
+    font-family: 'Merriweather', serif;
+    align-self: center;
+    font-size: 7.32vw;
+    margin-left: 1.83vw;
+    color: rgb(120, 0, 145);
+    letter-spacing: 0.2vw;
+}
+
+.left p{
+
+    font-family: 'Crimson Text', serif;
+    font-size: 2.34vw;
+    width: 75%;
+    margin-left: 4.39vw;
+    color: rgb(53, 53, 53);
+    line-height: 3vw;
+    text-align: left;
+
+}
+
+
+.right{
+
+    background-color: white;
+    /* border: 2px solid black; */
+    align-self: center;
+    padding: 2.19vw;
+    margin: 10.68vw 10.17vw 0 0;
+    width: 25%;
+    border-radius: 0.73vw;
+    box-shadow: 0 0 1.09vw grey;
+    
+}
+
+.right input{
+
+    font-family: 'Crimson Text', serif;
+    font-size: 1.6vw;
+    letter-spacing: 0.03vw;
+    display: block;
+    outline: none;
+    padding: 0.58vw;
+    margin: 1.46vw 0;
+    border: 0.10vw solid rgb(120, 0, 145);
+    border-radius: 0.36vw;
+    color: rgb(53, 53, 53);
+    box-shadow: 0 0 0.18vw rgba(121, 0, 145, 0.596);
+
+}
+
+.right form input{
+    width: 94%;
+}
+
+#chatbutton, .home{
+
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 1.46vw;
+    font-weight: bold;
+    letter-spacing: 0.14vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 7.32vw;
+    outline: none;
+    line-height: 0;
+    padding: 2.19vw 1.46vw 1.39vw;
+    background-color: rgb(120, 0, 145);
+    color: white;
+    transition-duration: 0.2s;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    margin: auto;
+    margin-top: 2.19vw;
+    margin-bottom: 0.36vw;
+    box-shadow: 0 0 0.18vw rgba(121, 0, 145, 0.596);
+
+}
+
+#chatbutton:hover, .home:hover{
+
+    background-color: rgb(71, 0, 85);
+
+}
+
+.home{
+
+    display: block;
+    margin: 10.9vw auto 0;
+
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* Media Queries */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+    }
+
+
+    #logo img{
+        width: 11vw;
+        height: 8vh;
+    }
+
+
+    .left p{
+        font-size: 2.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 50vw;
+        height: 20vh;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .right input{
+        margin: 2vw 1vw;
+        font-size: 2rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 3vh;
+        font-size: 2rem;
+        padding: 2.9vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+    }
+
+    .left p{
+        font-size: 2.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 50vw;
+        height: 23vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 2vw 1vw;
+        font-size: 2rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 3vh;
+        font-size: 1.8rem;
+        padding: 2.9vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 414px){
+
+    .container{
+        display: block;
+        height: 55vh;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 15vw;
+        height: 8vh;
+    }
+
+    #logo h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 80vw;
+        height: 25vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 5vh;
+        font-size: 1.2rem;
+        padding: 2.8vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
+
+@media screen and (max-width: 375px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 12vw;
+        height: 7vh;
+    }
+
+    #logo h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 80vw;
+        height: 28vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 7vh;
+        font-size: 1.2rem;
+        padding: 3vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) and (min-height: 812px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 13vw;
+        height: 6vh;
+    }
+
+    #logo h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 80vw;
+        height: 22vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 4vh;
+        font-size: 1.3rem;
+        padding: 3vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 10vh auto;
+    }
+
+}
+
+
+@media screen and (max-width: 360px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 12vw;
+        height: 7vh;
+    }
+
+    #logo h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 80vw;
+        height: 28vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 5vh;
+        font-size: 1rem;
+        padding: 3.1vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 15vw;
+        height: 8.5vh;
+    }
+
+    #logo h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 1.2rem;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 80vw;
+        height: 28vh;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 6vh;
+        font-size: 1rem;
+        padding: 3.2vh 3vw 1.5vh;
+
+    }
+
+    .home{
+        margin: 15vh auto;
+    }
+
+}
+
