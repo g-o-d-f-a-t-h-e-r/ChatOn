@@ -14,7 +14,7 @@ const app = express()
 const server = http.createServer(app)
 const io = socket(server)
 port = process.env.PORT || 3000;
-host = '192.168.43.18';
+// host = '192.168.43.18';
 
 
 //EXPRESS STUFF
@@ -45,7 +45,7 @@ app.get('/chat', (req, res) => {
 
 
 //START THE SERVER
-server.listen(port,host, () => {
+server.listen(port, () => {
     console.log(`The server is running in port: ${port}`)
 })
 
