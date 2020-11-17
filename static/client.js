@@ -20,7 +20,8 @@ const {username, room} = Qs.parse(location.search, {
 
 })  
 
-const socket = io('https://chat0n.herokuapp.com/')
+// const socket = io('https://chat0n.herokuapp.com/')
+const socket = io('192.168.43.18:3000')
 
 
 //JOIN CHAT ROOM

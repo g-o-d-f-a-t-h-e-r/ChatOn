@@ -5,6 +5,7 @@ const express = require('express')
 const socket = require('socket.io')
 const formatMessage = require('./utils/messages')
 const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/users')
+const { hostname } = require('os')
 // const users = require('./utils/users')
 
 
@@ -13,6 +14,7 @@ const app = express()
 const server = http.createServer(app)
 const io = socket(server)
 port = process.env.PORT || 3000;
+host = '192.168.43.18';
 
 
 //EXPRESS STUFF
@@ -43,7 +45,7 @@ app.get('/chat', (req, res) => {
 
 
 //START THE SERVER
-server.listen(port, () => {
+server.listen(port,host, () => {
     console.log(`The server is running in port: ${port}`)
 })
 

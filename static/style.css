@@ -168,7 +168,7 @@ nav div{
 /* Media Queries */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (orientation:portrait){
     
     nav{
         padding: 1.5vh 30%;
@@ -223,7 +223,7 @@ nav div{
 
 }
 
-@media all and (max-width: 414px){
+@media all and (max-width: 414px) and (orientation:portrait){
     
     nav{
         padding-left: 18%;
@@ -277,7 +277,7 @@ nav div{
 
 }
 
-@media all and (max-width: 375px) and (min-height: 812px){
+@media all and (max-width: 375px) and (min-height: 812px) and (orientation:portrait){
     
     nav{
         padding-left: 18%;
@@ -331,7 +331,7 @@ nav div{
 
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) and (orientation:portrait){
 
     nav{
         padding-left: 18%;

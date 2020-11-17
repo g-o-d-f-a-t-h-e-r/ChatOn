@@ -1,4 +1,4 @@
-*{
+    *{
 
     margin: 0;
     padding: 0;
@@ -143,7 +143,8 @@ body{
 /* Media Queries */
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (orientation:portrait){
+    
 
     .container{
         display: block;
@@ -161,20 +162,20 @@ body{
 
 
     #logo img{
-        width: 11vw;
-        height: 8vh;
+        width: 110px;
+        height: 110px;
     }
 
 
     .left p{
         font-size: 2.5rem;
-        line-height: 3.5vh;
+        line-height: 50px;
         text-align: center;
     }
 
     .right{
-        width: 50vw;
-        height: 20vh;
+        width: 550px;
+        height: 300px;
         display: block;
         margin: auto;
         border-radius: 20px;
@@ -187,20 +188,20 @@ body{
     }
 
     #chatbutton, .home{
-        margin-top: 3vh;
+        margin-top: 50px;
         font-size: 2rem;
-        padding: 2.9vh 3vw 1.5vh;
+        padding: 40px 40px 22px;
 
     }
 
     .home{
-        margin: 15vh auto;
+        margin: 300px auto 0;
     }
 
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (orientation:portrait){
 
     .container{
         display: block;
@@ -216,15 +217,20 @@ body{
         padding: 0;
     }
 
+    #logo img{
+        width: 100px;
+        height: 100px;
+    }
+
     .left p{
         font-size: 2.5rem;
-        line-height: 3.5vh;
+        line-height: 35px;
         text-align: center;
     }
 
     .right{
-        width: 50vw;
-        height: 23vh;
+        width: 450px;
+        height: 250px;
         display: block;
         margin: auto;
         border-radius: 10px;
@@ -237,14 +243,14 @@ body{
     }
 
     #chatbutton, .home{
-        margin-top: 3vh;
+        margin-top: 50px;
         font-size: 1.8rem;
-        padding: 2.9vh 3vw 1.5vh;
+        padding: 35px 30px 18px;
 
     }
 
     .home{
-        margin: 15vh auto;
+        margin: 180px auto 0;
     }
 
 }
@@ -253,11 +259,11 @@ body{
 
 
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) and (orientation:portrait){
 
     .container{
         display: block;
-        height: 55vh;
+        /* height: 55vh; */
     }
 
     .left{
@@ -271,9 +277,10 @@ body{
 
     }
 
+
     #logo img{
-        width: 15vw;
-        height: 8vh;
+        width: 65px;
+        height: 62px;
     }
 
     #logo h1{
@@ -282,13 +289,13 @@ body{
 
     .left p{
         font-size: 1.5rem;
-        line-height: 3.5vh;
+        line-height: 24px;
         text-align: center;
     }
 
     .right{
-        width: 80vw;
-        height: 25vh;
+        width: 350px;
+        height: 210px;
         display: block;
         margin: auto;
         border-radius: 10px;
@@ -301,20 +308,80 @@ body{
     }
 
     #chatbutton, .home{
-        margin-top: 5vh;
-        font-size: 1.2rem;
-        padding: 2.8vh 3vw 1.5vh;
+        margin-top: 40px;
+        font-size: 1.4rem;
+        padding: 30px 30px 18px;
 
     }
 
     .home{
-        margin: 15vh auto;
+        margin: 140px auto 0;
     }
 
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) and (orientation:portrait){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:8vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #logo h1{
+        font-size: 2.5rem;
+    }
+
+    .left p{
+        font-size: 1.5rem;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .right{
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.4rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 45px;
+        font-size: 1.4rem;
+        padding: 28px 20px 15px;
+
+    }
+
+    .home{
+        margin: 100px auto 0;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) and (min-height: 812px) and (orientation:portrait){
 
     .container{
         display: block;
@@ -332,17 +399,77 @@ body{
     }
 
     #logo img{
-        width: 12vw;
-        height: 7vh;
+        width: 60px;
+        height: 60px;
     }
 
     #logo h1{
-        font-size: 10vw;
+        font-size: 2.5rem;
     }
 
     .left p{
         font-size: 1.5rem;
         line-height: 3.5vh;
+        text-align: center;
+    }
+
+    .right{
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .right input{
+        margin: 3vw 1.4vw;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+
+    #chatbutton, .home{
+        margin-top: 50px;
+        font-size: 1.4rem;
+        padding: 28px 30px 15px;
+
+    }
+
+    .home{
+        margin: 160px auto 0;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) and (orientation:portrait){
+
+    .container{
+        display: block;
+    }
+
+    .left{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10vh 0 ;
+        padding: 0;
+
+    }
+
+    #logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #logo h1{
+        font-size: 2.2rem;
+    }
+
+    .left p{
+        font-size: 1.4rem;
+        line-height: 22px;
         text-align: center;
     }
 
@@ -356,25 +483,26 @@ body{
 
     .right input{
         margin: 3vw 1.4vw;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         border-radius: 8px;
+        height: 30px;
     }
 
     #chatbutton, .home{
-        margin-top: 7vh;
+        margin-top: 30px;
         font-size: 1.2rem;
-        padding: 3vh 3vw 1.5vh;
+        padding: 25px 20px 15px;
 
     }
 
     .home{
-        margin: 15vh auto;
+        margin: 120px auto 0;
     }
 
 }
 
 
-@media screen and (max-width: 375px) and (min-height: 812px){
+@media screen and (max-width: 320px) and (orientation:portrait){
 
     .container{
         display: block;
@@ -392,143 +520,23 @@ body{
     }
 
     #logo img{
-        width: 13vw;
-        height: 6vh;
+        width: 50px;
+        height: 50px;
     }
 
     #logo h1{
-        font-size: 10vw;
-    }
-
-    .left p{
-        font-size: 1.5rem;
-        line-height: 3.5vh;
-        text-align: center;
-    }
-
-    .right{
-        width: 80vw;
-        height: 22vh;
-        display: block;
-        margin: auto;
-        border-radius: 10px;
-    }
-
-    .right input{
-        margin: 3vw 1.4vw;
-        font-size: 1.3rem;
-        border-radius: 8px;
-    }
-
-    #chatbutton, .home{
-        margin-top: 4vh;
-        font-size: 1.3rem;
-        padding: 3vh 3vw 1.5vh;
-
-    }
-
-    .home{
-        margin: 10vh auto;
-    }
-
-}
-
-
-@media screen and (max-width: 360px){
-
-    .container{
-        display: block;
-    }
-
-    .left{
-
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin:10vh 0 ;
-        padding: 0;
-
-    }
-
-    #logo img{
-        width: 12vw;
-        height: 7vh;
-    }
-
-    #logo h1{
-        font-size: 10vw;
-    }
-
-    .left p{
-        font-size: 1.5rem;
-        line-height: 3.5vh;
-        text-align: center;
-    }
-
-    .right{
-        width: 80vw;
-        height: 28vh;
-        display: block;
-        margin: auto;
-        border-radius: 10px;
-    }
-
-    .right input{
-        margin: 3vw 1.4vw;
-        font-size: 1.3rem;
-        border-radius: 8px;
-    }
-
-    #chatbutton, .home{
-        margin-top: 5vh;
-        font-size: 1rem;
-        padding: 3.1vh 3vw 1.5vh;
-
-    }
-
-    .home{
-        margin: 15vh auto;
-    }
-
-}
-
-
-@media screen and (max-width: 320px){
-
-    .container{
-        display: block;
-    }
-
-    .left{
-
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin:10vh 0 ;
-        padding: 0;
-
-    }
-
-    #logo img{
-        width: 15vw;
-        height: 8.5vh;
-    }
-
-    #logo h1{
-        font-size: 10vw;
+        font-size: 2rem;
     }
 
     .left p{
         font-size: 1.2rem;
-        line-height: 3.5vh;
+        line-height: 20px;
         text-align: center;
     }
 
     .right{
-        width: 80vw;
-        height: 28vh;
+        width: 270px;
+        height: 180px;
         display: block;
         margin: auto;
         border-radius: 10px;
@@ -541,14 +549,14 @@ body{
     }
 
     #chatbutton, .home{
-        margin-top: 6vh;
-        font-size: 1rem;
-        padding: 3.2vh 3vw 1.5vh;
+        margin-top: 40px;
+        font-size: 1.1rem;
+        padding: 22px 15px 12px;
 
     }
 
     .home{
-        margin: 15vh auto;
+        margin: 90px auto 0;
     }
 
 }
