@@ -8,7 +8,6 @@ function formatMessage(username, text){
         // time: moment().utc('h:mm A').format('LLL')
         time: moment().utcOffset("+05:30").format('h:mm A')
         
-
     }
 }
 
