@@ -12,7 +12,7 @@ const menu = document.querySelector('.menu')
 const audio = new Audio('/static/notification.mp3')
 const incomming = new Audio('/static/incomming.mp3')
 const sent = new Audio('/static/sent.mp3')
-
+        
 
 //GET USERNAME AND ROOM FROM URL
 const {username, room} = Qs.parse(location.search, {
