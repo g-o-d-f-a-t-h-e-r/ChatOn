@@ -5,7 +5,7 @@ function formatMessage(username, text){
     return{
         username,
         text,
-        time: moment().utc('h:mm A')
+        time: moment().utc('h:mm A').format('LL')
     }
 }
 
