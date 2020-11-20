@@ -3,4 +3,13 @@ ChatOn is an interactive and user-friendly platform that helps users connect wit
 
 Website Link: https://chat0n.herokuapp.com
 
+### Below are some screenshots of the App:
+
+![](screenshots/home-page.jpg)
+
+![](screenshots/login-page.jpg)
+
+![](screenshots/chat-page.jpg)
+
+
 Anyone with any upgrades is Welcomed.
