@@ -12,4 +12,4 @@ Website Link: https://chat0n.herokuapp.com
 ![](screenshots/chat-page.jpg)
 
 
-Anyone with any upgrades is Welcomed.
+Anyone with any upgrades is welcomed.
